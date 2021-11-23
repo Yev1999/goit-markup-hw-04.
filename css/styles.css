@@ -91,6 +91,14 @@ body {
 
 /*---------------HEADER---------------*/
 
+.header-item-mail {
+    fill: currentColor;;
+    margin-right: 10px;
+}
+
+.header-item-mail:hover {
+    fill: currentColor;;
+}
 
 .header-navigation {
     display: flex;
@@ -136,6 +144,9 @@ body {
     line-height: 1.15;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
 }
 
 .header-tel:hover,
@@ -157,6 +168,12 @@ body {
 .section-services {
     text-align: center;
     background: var(--section-servicec-fon);
+    background-image: 
+    linear-gradient(rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)), url(../images/fon-servises.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
@@ -203,6 +220,16 @@ body {
 
 /*---------------section-work ---------------*/
 
+.icon-box {
+        width: 270px;
+        height: 120px;
+        background-color: #f5f4fa;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+}
 .work-list {
     display: flex;
 }
@@ -309,9 +336,127 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+    margin-bottom: 16px;
 }
 
+.footer-box2 {
+    margin-left: 70px;
+  }
+.name-social-icon {
+    fill: #AFB1B8;;
+}
+
+.name-social-item {
+    width: 44px;
+    height: 44px;
+}
+
+.name-social-item + .name-social-item {
+    margin-left: 10px;
+}
+
+.name-social-link {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #afb1b8;
+}
+
+.name-social-icon {
+    fill: currentColor;
+  }
+
+
+.name-social-link:hover,
+.name-social-link:focus {
+    background-color: var(--hover-text);
+    color: var(--main-btn-color);
+}
+
+
+.name-social-list {
+    display: flex;
+    justify-content: center;
+}
+/*--------------section-customer------------*/
+
+.customer-head {
+    font-size: 36px;
+    line-height: 1.16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--btn-text-color);
+    margin-bottom: 50px;
+}
+
+.customer-list {
+    display: flex;
+}
+
+.customer-link {
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #afb1b8;
+}
+
+.customer-icon {
+    fill: currentColor;
+}
+
+.customer-link:hover,
+.customer-link:focus {
+    color: var(--hover-text);
+    border: 1px solid var(--hover-text)
+}
+
+.customer-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+
 /*---------------footer ---------------*/
+
+.container-footer {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-social-icon {
+    fill: var(--main-btn-color);
+}
+
+.footer-social-item {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-desc {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+
+.footer-social-item + .footer-social-item {
+    margin-left: 10px;
+}
 
 .heder-logo-footer {
     font-family: Raleway;
@@ -322,6 +467,28 @@ img {
     color: var(--colored-text);
     margin-bottom: 20px;
     display: block;
+}
+
+.footer-social-link {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+  }
+
+.footer-social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--hover-text);
+    color: var(--main-btn-color);
 }
 
 .footer {
@@ -395,6 +562,10 @@ img {
 
 /*---------------section-portfolio---------------*/
 
+.footer-social-item {
+    width: 44px;
+    height: 44px;
+}
 
 .section-title-portfolio {
     font-weight: bold;
